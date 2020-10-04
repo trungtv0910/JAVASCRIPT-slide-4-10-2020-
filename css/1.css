@@ -1,0 +1,199 @@
+* {margin:0;padding: 0;}
+body,html{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+/*  hien thi slide */
+.cacslide ul li.hienthi .motslide{
+    opacity: 1;
+    visibility:visible;
+transition: 0.5s;
+
+}
+
+.cacslide ul li .motslide{
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+  
+}
+
+/*  hiệu ứng animation nauduoiws 1 */
+
+.cacslide ul li.hienthi .nauduoi1{
+ animation: bungra 0.7s forwards;
+ animation-delay: 1s;
+}
+@-webkit-keyframes bungra{
+    0%{transform: translateX(-100%);opacity: 0;transform: translateY(100%); }
+    100%{transform: translateX(0); opacity: 1;transform: translateY(0);}
+}
+
+/* hiệu ứng animation nâu dưới 2 */
+.cacslide ul li.hienthi .nauduoi2{
+    animation: bungra2 0.9s forwards;
+    animation-delay: 1.2s;
+
+   }
+   @-webkit-keyframes bungra2{
+    0%{transform: translateX(-100%);opacity: 0;transform: translateY(100%); }
+    100%{transform: translateX(0); opacity: 1;transform: translateY(0);}
+   }
+
+
+/* hiệu ứng animation nâu trên  */
+.cacslide ul li.hienthi .nautren{
+    animation: bungra3 0.8s forwards;
+animation-delay:1s ;
+   }
+   @-webkit-keyframes bungra3{
+    0%{transform: translateX(100%);opacity: 0;transform: translateY(-100%); }
+    100%{transform: translateX(0); opacity: 1;transform: translateY(0);}
+   }
+/*  */
+
+.chuyentrang ul {
+    display: inline;
+
+}
+
+.chuyentrang {
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    /* text-align: justify; */
+    margin: 0px auto;
+    z-index: 9999999;
+    width: 100%;
+}
+
+.chuyentrang li {
+    display: inline-block;
+    border: 1px solid;
+    width: 20px;
+    height: 20px;
+    text-indent: -9999px;
+    border-radius: 50%;
+    margin: 15px 2px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.chuyentrang li:hover,.chuyentrang li.kichhoat {
+    background: black;
+}
+.anh{
+    width: 100%;
+    height: 100%;
+    background-size: cover !important;
+   
+}
+
+/* CÁC Slide */
+.cacslide ul li{
+    position: absolute;
+    list-style: none;
+    width: 100%;
+    height: 100%;
+}
+.cacslide ul li .motslide {
+    position: relative;
+}
+.motslide .nauduoi1{
+    position: absolute;
+    top: -75%;
+    left: 0;
+    /* width: 577px; */
+    opacity: 0;
+    /* height: 600px; */
+}
+.motslide .nauduoi2{
+    position: absolute;
+    top: -40%;
+    left: 0;
+    opacity: 0;
+    /* width: 450px; */
+    /* height: 500px; */
+}
+.motslide .nautren{
+    position: absolute;
+    top: 0;
+    right:  0;
+    width: 200px;
+    height: 207px;
+    opacity: 0;
+}
+.cacslide{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.cacslide ul{
+    width: 100%;
+    height: 100%;
+}
+.motslide{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.motslide .khoitext{
+    position: absolute;
+    z-index: 999;
+    top: 360px;
+    left: 120px;
+    width: 200px;
+    color: white;
+}
+/* xữ lý aniamtion cho khối  */
+.cacslide ul li.hienthi .khoitext h3,
+.cacslide ul li.hienthi .khoitext p .trung,
+.cacslide ul li.hienthi .khoitext .ke,
+.cacslide ul li.hienthi .khoitext p,
+.cacslide ul li.hienthi .khoitext .nut {
+    animation: hienratext 0.8s forwards;
+ 
+    opacity: 0;
+}
+/*  thiết lập từng cái */
+.cacslide ul li.hienthi .khoitext h3{
+    animation-delay: 1.7s;
+}
+.cacslide ul li.hienthi .khoitext p.trung{
+    animation-delay: 1.9s;
+}
+.cacslide ul li.hienthi .khoitext .ke{
+    animation-delay: 2s;
+}
+.cacslide ul li.hienthi .khoitext p{
+    animation-delay: 2.2s;
+}
+.cacslide ul li.hienthi .khoitext .nut{
+    animation-delay: 2.4s;
+}
+
+
+
+
+
+a.btn.btn-primary.nut {
+    background: none;
+    padding: 5px 60px;
+    border: 1px solid white;
+    border-radius: 0;
+}
+@-webkit-keyframes hienratext{
+    0%{transform: translateX(-30%);opacity: 0; }
+    100%{transform: translateX(0); opacity: 1;}
+}
+
+
+
+
+/*  */
+.slidewrapper{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
